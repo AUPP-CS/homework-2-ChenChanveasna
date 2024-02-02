@@ -68,9 +68,9 @@ while True:
 
     
     #Initialize variables to store user's inputs
-    userNameInfo = input("\t🧾 Please enter your name: ")
-    userWeight = input ("\t⚖️ Please Enter your Weight in (KG): ")
-    userHeight = input ("\t🌴 Enter your Height in (Meter): ")
+    userNameInfo = input("\t🧾 Please Enter Your Name: ")
+    userWeight = input ("\t⚖️  Please Enter your Weight in (KG): ")
+    userHeight = input ("\t🌴 Please Enter Your Height in (Meter): ")
 
     #Create two variable to store the values since the function return 2 values
     result1, result2 = bmi_check(userWeight, userHeight)
@@ -80,9 +80,10 @@ while True:
     print("    ║                                                                                                                                           ║")
     print("    ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝")
     
+    #Asking if the user want to continue using the App or Quit
     more_try = input("\n\tDo you want to continue? (Y/N): ")
     if (more_try.upper() == "Y"): 
-        continue
+        continue #This will resume the loop and start taking input from user all over again to calculate a new output
     else: 
         print('''\n
     ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -94,4 +95,4 @@ while True:
     ║                                                                       |___/                                                               ║
     ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 ''')
-        break
+        break #This will break the loop and exit the application
