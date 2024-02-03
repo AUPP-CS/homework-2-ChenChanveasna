@@ -18,7 +18,7 @@ def bmi_check(weight, height):
         if weight <= 0 or height < 0:
             return "invalid input"
         #Check for unrealistic weight and height as per the Flowchart
-        elif weight > 550 or height > 2.72:
+        elif weight > 635 or height > 2.72:
             return "unrealistic information"
         
         #BMI calculation
